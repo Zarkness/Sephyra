@@ -1,0 +1,5 @@
+AsciiConsole: "hola"
+
+prefix: "✨ |"
+welcome: "%prefix% Welcome, %user%!"
+error: "%prefix% Something went wrong: %error%"

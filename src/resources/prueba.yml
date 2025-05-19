@@ -1,0 +1,9 @@
+
+#  ╔════════════════════════════════════════════════════════════════╗
+#  ║     ✦✦✦ Archivo de Configuración de Sephyra ✦✦✦             ║
+#  ╚════════════════════════════════════════════════════════════════╝
+#  
+
+lang: en #Idioma por defecto
+prefix: "!" #Prefijo para comandos
+token: YOUR_BOT_TOKEN #Token del bot (oculto)

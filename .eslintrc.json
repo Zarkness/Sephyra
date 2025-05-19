@@ -1,0 +1,43 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": "default",
+          "format": ["camelCase"]
+        },
+        {
+          "selector": "variable",
+          "modifiers": ["const"],
+          "format": ["camelCase", "UPPER_CASE"]
+        },
+        {
+          "selector": "typeLike",
+          "format": ["PascalCase"]
+        },
+        {
+          "selector": "enumMember",
+          "format": ["PascalCase"]
+        },
+        {
+          "selector": "function",
+          "format": ["camelCase"]
+        }
+      ]
+    },
+    "ignorePatterns": ["dist/", "node_modules/"]
+  }
+  

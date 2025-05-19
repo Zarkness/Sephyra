@@ -1,0 +1,38 @@
+{
+  "name": "sephyra",
+  "module": "src/index.ts",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.js",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "bunx eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.11.2",
+    "chalk": "^5.4.1",
+    "discord.js": "^14.19.3",
+    "discordx": "^11.12.4",
+    "dotenv": "^16.5.0",
+    "yaml": "^2.8.0"
+  }
+}
