@@ -1,0 +1,29 @@
+# This is the header of the YAML file
+# Author: Your Name
+
+# Animal examples
+doe: "a deer, a female deer" #female deer
+ray: 'a drop of golden sun' #sunshine
+pi: 3.14159 #approximate value of π
+xmas: true
+french-hens: 3
+calling-birds123:
+  - huey
+  - dewey
+  - louie
+  - fred
+# Details of the fifth day
+xmas-fifth-day:
+# Bird names list
+calling-birds: 'four' #list of calling birds
+  french-hens: 3
+  golden-rings: 5
+  partridges:
+    count: 1
+    location: 'a pear tree' #where it is located
+  turtle-doves: 'two' #two turtle doves
+# Multiline poem
+poem: |-
+  This is a
+  multiline
+  string example

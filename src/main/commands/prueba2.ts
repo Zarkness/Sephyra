@@ -5,14 +5,14 @@
 //   prefix: t('prefix')
 // }));
 
-import fs from 'fs'
+
 import YAML, { Document } from 'yaml'
 import {
   isAlias, isCollection, isMap, isNode,
   isPair, isScalar, isSeq, Scalar,
   visit, visitAsync, YAMLMap, YAMLSeq
 } from 'yaml'
-
+import fs from 'fs'
 import { createDocumentWithHeader, createCommentedScalar, saveYAML } from '../config/yaml'
 
 const existFile = fs.existsSync('./src/resources/prueba.yml')
@@ -20,7 +20,7 @@ const existFile = fs.existsSync('./src/resources/prueba.yml')
 if (!existFile) {
   const header = `
   ╔════════════════════════════════════════════════════════════════╗
-  ║     ✦✦✦ Archivo de Configuración de Sephyra ✦✦✦             ║
+  ║     ✦✦✦ Archivo de Configuración de Sephyra ✦✦✦              ║
   ╚════════════════════════════════════════════════════════════════╝
   `
 

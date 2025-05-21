@@ -2,11 +2,6 @@ import { Client, Events, GatewayIntentBits } from "discord.js";
 import { HEX, log } from "../utils/utils";
 import fs from 'fs'
 import YAML from 'yaml'
-// config();
-
-
-
-// export const CLIENT = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 
 export function ready() {

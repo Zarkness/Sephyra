@@ -1,0 +1,36 @@
+#  ╔══════════════════════════════════════════════════════════════════════════════════════╗
+      #  ║                                                                                      ║
+      #  ║               ███████╗███████╗██████╗ ██╗  ██╗██╗   ██╗██████╗  █████╗               ║
+      #  ║               ██╔════╝██╔════╝██╔══██╗██║  ██║╚██╗ ██╔╝██╔══██╗██╔══██╗              ║
+      #  ║               ███████╗█████╗  ██████╔╝███████║ ╚████╔╝ ██████╔╝███████║              ║
+      #  ║               ╚════██║██╔══╝  ██╔═══╝ ██╔══██║  ╚██╔╝  ██╔══██╗██╔══██║              ║
+      #  ║               ███████║███████╗██║     ██║  ██║   ██║   ██║  ██║██║  ██║              ║
+      #  ║               ╚══════╝╚══════╝╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝              ║
+      #  ║                                                                                      ║
+      #  ║                     ✦✦✦ DISCORD BOT — V 0.0.1 ✦✦✦                                  ║
+      #  ║                                                                                      ║   
+      #  ╚══════════════════════════════════════════════════════════════════════════════════════╝
+      #  
+  
+  
+      #  Tutorial for Discord Bot Settings in Developer Portal
+      #  1. Create a New Application in the Discord Developer Portal. https://discord.com/developers/applications
+      #  2. In the application, navigate to the 'Bot' section and click 'Add Bot'.
+      #  3. After creating the bot, locate the 'TOKEN' section and click 'Copy' to get your bot token.
+  
+      #  Important Bot Settings:
+      #  - Disable 'PUBLIC BOT'
+      #  - Enable 'PRESENCE INTENT'
+      #  - Enable 'SERVER MEMBERS INTENT'
+      #  - Enable 'MESSAGE CONTENT INTENT'
+  
+      #  Remember to keep your bot token secure and never share it publicly.
+
+# Set bot lenguage
+Lang: 'en_EN' #Ej: en_EN, es_ES...
+# Set your bot token
+Token: 'Your Bot Token'
+# set your guild id
+GuildID: 'Your Guild ID' #example 1342464197560373343
+BotName: 'Sephyra' #Set bot name
+TimeZone: 'Europe/Madrid' #set your timezone
