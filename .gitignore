@@ -89,6 +89,6 @@ secrets*
 *.rej
 
 # Not ignore files from src/main/resources
-/src/main/resources/*
+/src/main/resources/
 !/src/main/resources/lang/
 !/src/main/resources/config_Example.yml
