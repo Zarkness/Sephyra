@@ -1,34 +1,94 @@
-# dependencies (bun install)
-node_modules
+# Node.js dependencies
+node_modules/
 
-# output
-out
-dist
-*.tgz
+# Build output
+dist/
+build/
+out/
 
-# code coverage
-coverage
-*.lcov
-
-# logs
-logs
-_.log
-report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
-
-# dotenv environment variable files
+# Environment files with secrets
 .env
-.env.development.local
-.env.test.local
-.env.production.local
 .env.local
+.env.*.local
+config.env
+secrets.json
 
-# caches
-.eslintcache
-.cache
-*.tsbuildinfo
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# IntelliJ based IDEs
-.idea
-
-# Finder (MacOS) folder config
+# OS files
 .DS_Store
+Thumbs.db
+
+# VSCode settings folder
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDEs
+.idea/
+*.iml
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Mac System files
+.AppleDouble
+.LSOverride
+
+# Debug folders
+debug/
+
+# Optional npm cache folder
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional next.js build output
+.next/
+
+# Optional coverage directory
+coverage/
+
+# Optional test result folders
+.test-results/
+
+# Optional JetBrains IDE folders
+.idea/
+
+# Optional Python compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore dotenv example files (optional)
+.env.example
+
+# Ignore any files named 'secret' or 'secrets' just in case
+secret*
+secrets*
+
+# Ignore files containing keys or tokens (if named in a custom way)
+*key*
+*token*
+
+# Ignore any backups or patch files
+*.bak
+*.orig
+*.rej
+
+# Not ignore files from src/main/resources
+/src/main/resources/*
+!/src/main/resources/lang/
+!/src/main/resources/config_Example.yml
