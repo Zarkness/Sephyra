@@ -1,5 +1,7 @@
 AsciiConsole: "hola"
 
 prefix: "✨ |"
-welcome: "%prefix% Welcome, %user%!"
+#welcome: "%prefix% Welcome, %user%!"
 error: "%prefix% Something went wrong: %error%"
+messages:
+  welcome: "%prefix% Welcome, {name}!"

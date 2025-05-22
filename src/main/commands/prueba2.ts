@@ -13,7 +13,7 @@ import {
   visit, visitAsync, YAMLMap, YAMLSeq
 } from 'yaml'
 import fs from 'fs'
-import { createDocumentWithHeader, createCommentedScalar, saveYAML } from '../config/yaml'
+import { createDocumentWithHeader, createCommentedScalar, saveYAML } from '../config/filesYaml/yaml'
 
 const existFile = fs.existsSync('./src/resources/prueba.yml')
 

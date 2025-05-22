@@ -25,10 +25,12 @@
 #
 # Remember to keep your bot token secure and never share it publicly.
 
-Lang: es_ES
+Lang: "es_ES"
 
 Token: "MTM3MzA0NTM0MTgzNzg1Njg3OQ.GZzovd.KlIEtkBOU1uDzex2vMa0ufRnz5a0xDFswfi8ZY"
 GuildID:
 BotName:
-TimeZone
-
+TimeZone:
+debug: false
+server:
+  name: "prueba"

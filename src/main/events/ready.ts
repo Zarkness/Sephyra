@@ -1,21 +1,21 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
-import { HEX, log } from "../utils/utils";
+import { createLogger, HEX, log, NAME, prefix } from "../utils/utils";
 import fs from 'fs'
 import YAML from 'yaml'
+import { ConfigReader } from "../config/filesYaml/configReader";
+//import { ConfigReader } from './configReader'
+
 
 
 export function ready() {
-    const file = fs.readFileSync('./src/resources/config.yml', 'utf8');
-    const data = YAML.parse(file);
-    const tokenYaml = data['Token'];
+    const config = new ConfigReader('./src/resources/config.yml');
+    const tokenYaml = config.get('Token')  //ata['Token'];
     const CLIENT = new Client({ intents: [GatewayIntentBits.Guilds] });
-    const asciiName = data.AsciiConsole;
+    const asciiName = NAME
 
 
     CLIENT.once(Events.ClientReady, readyClient => {
-        const tag = CLIENT.user?.tag ?? 'Unknown#0000';
-        const NAME = asciiName.replace('%sephyra_nametag%', tag);
-        log(HEX.darkTurquoise(NAME));
+        createLogger(prefix.empty, HEX.gradient(asciiName));
     });
     
     CLIENT.login(tokenYaml);

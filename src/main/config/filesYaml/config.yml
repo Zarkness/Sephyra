@@ -1,0 +1,3 @@
+server:
+  name: TestServer
+  port: !!invalid-syntax-here!!
