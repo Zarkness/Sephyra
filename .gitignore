@@ -93,9 +93,4 @@ secrets*
 !/src/main/resources/lang/
 !/src/main/resources/config_Example.yml
 src/resources/config.yml
-
-src\main\config\filesYaml\test.ts
-src\main\config\filesYaml\pruebas.ts
-src\main\config\filesYaml\oldyaml.ts
-src\main\config\filesYaml\old.ts
-src\main\config\filesYaml\config.yml
+src/test
