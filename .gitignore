@@ -92,3 +92,4 @@ secrets*
 /src/main/resources/
 !/src/main/resources/lang/
 !/src/main/resources/config_Example.yml
+src/resources/config.yml
