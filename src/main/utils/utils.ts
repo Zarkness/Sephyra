@@ -1,5 +1,6 @@
 import chalk from "chalk";
 import gradient from "gradient-string";
+import { ConfigReader } from "../config/filesYaml/configReader";
 
 
 export const NAME = `
@@ -16,6 +17,12 @@ export const NAME = `
             ║                                                                                      ║   
             ╚══════════════════════════════════════════════════════════════════════════════════════╝                                                      
 `
+
+export const configFile = new ConfigReader('./src/resources/config.yml');
+export const langDir = './src/resources/lang';
+export const discordToken = configFile.get('Token');
+export const discordGuild = configFile.get('GuildID');
+export const discordClient = configFile.get('ClientID')
 
 export const HEX = {
     darkTurquoise: chalk.hex('#2daead'),

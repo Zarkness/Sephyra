@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import YAML from 'yaml'
-import { ConfigReader } from './configReader'
+import { configFile, langDir } from '../../utils/utils'
 
 type LangData = Record<string, any>
 
@@ -11,9 +11,9 @@ export class LangManager {
   private fallbackLang: string = 'en_US'
   private langDir: string
 
-  constructor(langDir: string = './src/resources/lang', configPath: string = './src/resources/config.yml') {
+  constructor() {
     this.langDir = path.resolve(langDir)
-    const config = new ConfigReader(configPath)
+    const config = configFile
 
     this.loadAllLanguages()
     this.setLanguage(config.get<string>('lang', this.fallbackLang))
