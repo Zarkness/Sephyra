@@ -21,8 +21,8 @@ export const NAME = `
 export const configFile = new ConfigReader('./src/resources/config.yml');
 export const langDir = './src/resources/lang';
 export const discordToken = configFile.get('Token');
-export const discordGuild = configFile.get('GuildID');
-export const discordClient = configFile.get('ClientID')
+export const discordGuildID = configFile.get('GuildID');
+export const discordClientID = configFile.get('ClientID')
 
 export const HEX = {
     darkTurquoise: chalk.hex('#2daead'),

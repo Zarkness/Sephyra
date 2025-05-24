@@ -34,6 +34,7 @@
     "discordx": "^11.12.4",
     "dotenv": "^16.5.0",
     "gradient-string": "^3.0.0",
+    "winston": "^3.17.0",
     "yaml": "^2.8.0"
   }
 }
